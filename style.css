@@ -1,0 +1,177 @@
+/* Start Variables */
+:root {
+  --main-color:#0010ff ;
+  --secondary-color: #06f606;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+
+}
+html {
+  scroll-behavior: smooth;
+
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+a{
+  text-decoration: none;
+
+}
+ul{
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+/**/
+@keyframes to-top {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+  
+}
+@keyframes sh {
+  0%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 0;}
+}
+/**/
+/* Start Header */
+header .container{
+    text-align: center;
+}
+header .container h1{
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: bolder;
+}
+header .container h2{
+    color: var(--secondary-color);
+font-size: 25px;
+font-weight: bold;
+}
+header .container .number label{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-right: 15px;
+}
+header .container .number input{
+  border: 2px rgb(1, 194, 228) solid;
+  background-color: rgb(1, 194, 228);
+  border-radius: 50px;
+  padding: 15px;
+  color: red;
+}
+header .container .number .add{
+      padding: 20px;
+    margin-left: 15px;
+    border-radius: 50px;
+    background-color: rgb(1, 194, 228);
+    cursor: pointer;
+}
+/*end header */
+.ditails{
+    background-color: #0ee0d7;
+}
+.ditails .container .content {
+    background-color: #0ee0d7;
+    display: flex;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+}
+
+.ditails .container .content .cunter{
+    display: flex;
+gap: 25px;
+align-items: center;
+}
+.ditails .container .content .btn span{
+    font-size: 20px;
+margin-right: 20px;
+}
+.ditails .container .content .btn .button{
+    background-color: #ababd9;
+border: none;
+padding: 15px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/*main*/
+
+.main{
+  margin-top: 100px;
+}
+.main .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px , 1fr));
+  gap: 15px;
+}
+.main .container .divice {
+  margin-bottom: 50px;
+}
+.main .container .divice .screen{
+  width: 100%;
+  height: 100px;
+  background-color:rgb(6, 242, 242);
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+.main .container .divice .screen .inner{
+  width: 100%;
+  animation: to-top 0s ease infinite;
+  background-color: var(--main-color);
+
+}
+.main .container .divice .btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.main .container .divice .btn button{
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--main-color);
+}
+.main .container .divice .btn .end{
+  background-color: var(--secondary-color);
+}
+/*main*/
